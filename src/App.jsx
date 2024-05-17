@@ -1,11 +1,16 @@
 import { useState } from 'react'
+import { useContext } from 'react'
+import { datacontext } from './context/DataContext'
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  // const [count, setCount] = useState(0)
+  const [data,setdata]= useContext(datacontext)
+  console.log(data)
+
 
   return(
     <div>
-      <h1> Hello </h1>
+      App
     </div>
   )
 }
